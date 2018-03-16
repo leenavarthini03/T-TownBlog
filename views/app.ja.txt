@@ -1,0 +1,6 @@
+var checkPw2 = p => return p%2===0;
+var chkPw2 = p=>{
+    if(p===0) return  true
+    else if(p<2) return false
+    return chkPw2(p/2);
+}
