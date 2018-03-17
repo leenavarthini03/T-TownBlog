@@ -10,7 +10,8 @@ app.set("view engine","ejs");
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
-mongoose.connect('mongodb://localhost/RESTapp');
+//mongoose.connect('mongodb://localhost/RESTapp');
+mongoose.connect('mongodb://sumanth:bhlv0304@ds217349.mlab.com:17349/blogapp');
 
 var blogSchema= new mongoose.Schema({
     title:String,
